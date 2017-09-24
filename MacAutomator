@@ -1,0 +1,12 @@
+tell application "Google Chrome Canary"
+	tell first window
+		set n to active tab index
+		
+		set myTab to make new tab at after tab n with properties {URL:"https://newscred.atlassian.net/secure/RapidBoard.jspa?rapidView=111&selectedIssue=SKYNET-789"}
+		set myTab to make new tab at after tab n with properties {URL:"https://newscred.atlassian.net/secure/RapidBoard.jspa?rapidView=122&selectedIssue=MORT-1632"}
+		set myTab to make new tab at after tab n with properties {URL:"https://newscred.atlassian.net/secure/RapidBoard.jspa?rapidView=174&selectedIssue=INTG-451"}
+		set myTab to make new tab at after tab n with properties {URL:"https://calendar.google.com/calendar/render#main_7"}
+		set myTab to make new tab at after tab n with properties {URL:"https://drive.google.com/drive/u/0/folders/0B4VbfEfSOuDEQ3pPckVoRGxiRjg"}
+		set myTab to make new tab at after tab n with properties {URL:"https://trello.com/b/rmjkzQCP/ac"}
+	end tell
+end tell
