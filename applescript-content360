@@ -1,0 +1,30 @@
+tell application "Safari"
+	make new document
+	activate
+	
+	set the URL of document 1 to "https://newscred.atlassian.net/secure/RapidBoard.jspa?rapidView=234&projectKey=CNT&selectedIssue=CNT-447"
+	
+	my new_tab()
+	set the URL of document 1 to "https://drive.google.com/drive/u/0/my-drive"
+	
+	my new_tab()
+	set the URL of document 1 to "https://newscred.slack.com/messages"
+	
+	my new_tab()
+	set the URL of document 1 to "https://newscred.zoom.us/j/954451708"
+	
+	my new_tab()
+	set the URL of document 1 to "https://docs.google.com/spreadsheets/d/1n91Vp6UYsMUd51CMSIKouJDaJjzNyhGKy2YoGlRf2qM/edit#gid=2142327629"
+	
+	my new_tab()
+	set the URL of document 1 to "https://newscred.atlassian.net/browse/CNT-481?jql=project%20%3D%20%22Content%20360%22%20%20and%20updated%20%3E%20-1d"
+	
+end tell
+on new_tab()
+	tell application "Safari" to activate
+	tell application "System Events"
+		tell process "Safari"
+			click menu item "New Tab" of menu "File" of menu bar 1
+		end tell
+	end tell
+end new_tab
