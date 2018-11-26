@@ -1,0 +1,25 @@
+tell application "Safari"
+	make new document
+	activate
+	
+	set the URL of document 1 to "https://newscred.atlassian.net/secure/RapidBoard.jspa?rapidView=234&projectKey=CNT&view=planning&selectedIssue=CNT-458"
+	
+	my new_tab()
+	set the URL of document 1 to "https://drive.google.com/drive/u/0/my-drive"
+	
+	my new_tab()
+	set the URL of document 1 to "https://newscred.slack.com/messages"
+	
+	
+	my new_tab()
+	set the URL of document 1 to "https://newscred.atlassian.net/wiki/spaces/PD/pages/292782090/Infrastructure+Skynet+Dhaka"
+	
+end tell
+on new_tab()
+	tell application "Safari" to activate
+	tell application "System Events"
+		tell process "Safari"
+			click menu item "New Tab" of menu "File" of menu bar 1
+		end tell
+	end tell
+end new_tab
