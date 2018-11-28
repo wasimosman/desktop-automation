@@ -1,0 +1,5 @@
+mode con:cols=50 lines=10
+ping 192.168.2.1 -t
+
+#make a shortcut> layout and Windows position 1510/840
+#this is a batch file for windows
