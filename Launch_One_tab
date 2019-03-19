@@ -1,0 +1,8 @@
+tell application "Google Chrome"
+	tell first window
+		set n to active tab index
+		
+		set myTab to make new tab at after tab n with properties {URL:"https://meet.google.com/csd-rcnd-quv"}
+		
+	end tell
+end tell
